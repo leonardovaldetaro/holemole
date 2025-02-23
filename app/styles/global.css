@@ -56,3 +56,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.swiper-button-next {
+	display: none;
+}

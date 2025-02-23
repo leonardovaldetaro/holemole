@@ -1,18 +1,14 @@
 @import "../../styles/breakpoints";
 
 .hero {
-    background-image: url("/assets/bg-temp.png");
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: calc(100vh - 127px);
     align-items: center;
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: 4em 2em;
 
     @media (max-width: $desktop_sm) {
-        padding: 2em 0;
+        padding: 4em 2em;
         background-size: cover;
     }
 }
@@ -23,70 +19,43 @@
     flex-direction: row;
     align-items: center;
 
+    &__left {
+        width: 30%;
+        @media (max-width: $desktop_sm) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__right {
+        width: 70%;
+        padding-right: 15em;
+        @media (max-width: $desktop_sm) {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin-top: 2em;
+        }
+        &__text {
+            font-size: 24px;
+            @media (max-width: $desktop_sm) {
+                text-align: center;
+            }
+            &__orange {
+                color: #ec4e1b;
+                font-size: 32px;
+                @media (max-width: $desktop_sm) {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
     @media (max-width: $desktop_sm) {
         flex-direction: column;
         align-items: center;
-    }
-
-    &__left {
-        width: 50%;
-
-        @media (max-width: $desktop_sm) {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 3em;
-        }
-
-        &__title {
-            font-size: 7em;
-            color: black;
-            font-family: inherit;
-            text-transform: uppercase;
-            line-height: 85px;
-            margin-bottom: .3em;
-            text-shadow:
-                -4px -4px 0 white,
-                4px -4px 0 white,
-                -4px 4px 0 white,
-                4px 4px 0 white;
-
-            @media (max-width: $desktop_sm) {
-                font-size: 3.5em;
-                text-align: center;
-                line-height: 50px;
-                margin-bottom: .5em;
-            }
-
-            &__smaller {
-                font-size: 0.6em;
-            }
-
-            &__biger {
-                font-size: 1.5em;
-            }
-        }
-    }
-
-    &__right {
-        width: 50%;
-        display: flex;
-        justify-content: end;
-
-        @media (max-width: $desktop_sm) {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        &__img {
-            width: 70%;
-
-            @media (max-width: $desktop_sm) {
-                width: 90%;
-            }
-        }
     }
 }
