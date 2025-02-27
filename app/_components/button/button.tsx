@@ -1,4 +1,3 @@
-import { Children } from 'react';
 import Styles from './Button.module.scss';
 
 interface buttonProps {
@@ -7,7 +6,7 @@ interface buttonProps {
     className?: string;
 };
 
-export default function Button ({ onClick, children, className }: buttonProps) {
+export default function Button ({ onClick, children }: buttonProps) {
     return(
         <button
             onClick={onClick}

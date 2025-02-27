@@ -1,7 +1,8 @@
 "use client"
 
-import Carousel from './_components/carousel';
-import Hero from './_components/heroTop';
+import Carousel from './home/_components/carousel';
+import Hero from './home/_components/heroTop';
+import Catering from './home/_components/sectionCatering';
 import Styles from './Page.module.scss'
 
 
@@ -10,6 +11,7 @@ export default function Page() {
         <main className={Styles.main}>
             <Carousel />
             <Hero />
+            <Catering />
         </main>
     );
   }

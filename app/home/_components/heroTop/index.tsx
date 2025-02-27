@@ -12,7 +12,7 @@ export default function Hero() {
                 </div>
                 <div className={Styles.heroContainer__right}>
                     <p className={Styles.heroContainer__right__text}>
-                        We’ve been serving Mexican-Inspired Favorites for over 25 years, what we consider to be
+                        We’ve been serving Mexican-Inspired Favorites for over 25 years, what we consider to be...
                     </p>
                     <p className={Styles.heroContainer__right__text__orange}>
                         “Southern California Comfort Food”

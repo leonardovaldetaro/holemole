@@ -1,16 +1,38 @@
+@import "../../styles/variables";
 @import "../../styles/breakpoints";
 
 .header {
     align-items: center;
-    background: url("/assets/header_pattern.jpg"), rgba(236,78,27,1);
+    background: url("/assets/header_pattern.jpg"), $brand-orange;
     background-repeat: repeat;
     background-size: auto;
     background-blend-mode: multiply;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, .6);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, .6);
     display: flex;
     justify-content: center;
     width: 100%;
-    z-index: 9;
+    z-index: 10;
+    position: relative;
+
+    &__socialMediaContainer {
+        margin-top: 2em;
+        color: $text-white;
+        display: flex;
+        gap: 32px;
+
+        &__link {
+            color: $text-white;
+        }
+    }
+
+    &__copyright {
+        margin-top: 3em;
+
+        span {
+            font-size: .8em;
+            color: $text-white;
+        }
+    }
 }
 
 .headerContainer {
@@ -19,6 +41,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 20;
 
     @media (max-width: $desktop_sm) {
         padding: 1em 1em;
@@ -42,11 +66,64 @@
         }
 
         &__bar {
-            background-color: white;
-            border: 2px solid black;
+            background-color: $text-white;
+            border: 2px solid $text-titles;
             height: 8px;
             transition: transform 0.3s ease;
             border-radius: 4px;
         }
+    }
+}
+
+.navMenu {
+    align-items: center;
+    background: url("../../../public/assets/background-menu.jpg") $text-titles;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    height: calc(100vh - 126px);
+    left: -100%;
+    top: 126px;
+    z-index: 5;
+
+    &__list {
+        margin-bottom: 1em;
+
+        &__item {
+            list-style: none;
+            text-align: center;
+            padding-bottom: 1.5em;
+
+            &__link {
+                color: $text-white;
+                font-weight: 500;
+                font-size: 1.5em;
+                text-align: center;
+                transition: all .1s;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &:hover {
+                    color: $text-active;
+                }
+
+                &--ativo {
+                    color: orange;
+                }
+            }
+        }
+    }
+
+    &--open {
+        left: 0;
+        top: 126px;
+        height: calc(100vh - 126px);
+        transition: all 0.3s ease-out;
     }
 }

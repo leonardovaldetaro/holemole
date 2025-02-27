@@ -1,4 +1,5 @@
-@import "../../styles/breakpoints";
+@import "../../../styles/variables";
+@import "../../../styles/breakpoints";
 
 .hero {
     align-items: center;
@@ -30,7 +31,7 @@
     }
     &__right {
         width: 70%;
-        padding-right: 15em;
+        padding-right: 10em;
         @media (max-width: $desktop_sm) {
             width: 100%;
             display: flex;
@@ -40,15 +41,18 @@
             margin-top: 2em;
         }
         &__text {
+            color: $text-titles;
             font-size: 24px;
             @media (max-width: $desktop_sm) {
                 text-align: center;
             }
             &__orange {
-                color: #ec4e1b;
-                font-size: 32px;
+                color: $brand-orange;
+                font-size: 40px;
+                margin-top: 1em;
                 @media (max-width: $desktop_sm) {
                     text-align: center;
+                    margin-top: .5em;
                 }
             }
         }

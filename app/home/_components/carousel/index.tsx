@@ -1,8 +1,7 @@
 'use client';
 
 import Styles from './carousel.module.scss';
-import Button from '../button/button';
-import { FaTruckFast } from "react-icons/fa6";
+import Button from '../../../_components/button/button';
 import { useEffect, useState } from 'react';
 
 //import swiper modules and styles
@@ -12,6 +11,7 @@ import 'swiper/scss';
 import 'swiper/scss/a11y';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
+import WhiteFishLogo from '../../../_components/white-fish-logo';
 
 const slides = [
     {
@@ -65,7 +65,7 @@ export default function Carousel() {
                             <div className={Styles.carouselContentCenter}>
                                 <div className={Styles.carouselTitleContainer}>
                                     <h1 className={Styles.carouselTitle}>{slide.title}</h1>
-                                    <Button><FaTruckFast /> Order Online Now</Button>
+                                    <Button><WhiteFishLogo /> Order Online Now</Button>
                                 </div>
                             </div>
                         </div>
