@@ -1,0 +1,102 @@
+@import "../../../styles/variables";
+@import "../../../styles/breakpoints";
+
+.skipLine {
+    background: url("/assets/skipLineBackground.jpg"), rgba(22, 18, 14, .85);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 4em 0;
+
+    &__texts {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            color: $text-white;
+            font-size: 64px;
+            line-height: 50px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        p {
+            color: $text-white;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 16px;
+        padding: 6em;
+        max-width: 1440px;
+        flex-wrap: wrap;
+
+        @media (max-width: $desktop_sm) {
+            padding: 4em 1em;
+            row-gap: 2em;
+            column-gap: 24px;
+        }
+
+        &__card {
+            width: 14.285%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @media (max-width: $desktop_sm) {
+                width: 38%;
+            }
+
+            &__title {
+                color: $brand-yellow;
+                font-size: 32px;
+                margin-bottom: .3em;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: $text-white;
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+
+        &__cardArrow {
+            width: 14.285%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media (max-width: $desktop_sm) {
+                width: 11.285%;
+            }
+
+        }
+    }
+}
+
+.icon {
+    width: 100px;
+}
+
+.iconDinamic {
+    display: block;
+    width: 100px;
+
+    @media (max-width: $desktop_sm) {
+        display: none;
+    }
+}

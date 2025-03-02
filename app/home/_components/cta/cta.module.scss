@@ -1,0 +1,37 @@
+@import "../../../styles/variables";
+@import "../../../styles/breakpoints";
+
+.ctaSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4em 0;
+
+    @media (max-width: $desktop_sm) {
+        width: 100%;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2em;
+
+        &__title {
+            font-size: 96px;
+            line-height: 87px;
+            color: $brand-orange;
+            text-shadow: 0px 3px 0px rgba(0, 0, 0, .9);
+
+            @media (max-width: $desktop_sm) {
+                font-size: 56px;
+                line-height: 60px;
+            }
+        }
+    }
+
+    &__button {
+        margin-top: 2em;
+    }
+
+}

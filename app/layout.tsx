@@ -1,5 +1,6 @@
 import './styles/global.css';
 import Header from '../app/_components/header';
+import Footer from './_components/footer';
 
 
 export const metadata = {
@@ -20,10 +21,13 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
       </head>
+
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
+
     </html>
   )
 }

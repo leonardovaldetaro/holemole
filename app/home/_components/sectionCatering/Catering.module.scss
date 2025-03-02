@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    margin-bottom: 2em;
+    margin-bottom: 6em;
 
     &__container {
         display: flex;
@@ -17,6 +17,7 @@
         @media (max-width: $desktop_sm) {
             padding: 0 16px;
             width: 100%;
+            align-items: center;
         }
 
         &__title {
@@ -47,6 +48,8 @@
         padding-top: 10em;
 
         @media (max-width: $desktop_sm) {
+            display: flex;
+            align-items: center;
             width: 100%;
             padding-top: 2em;
         }
