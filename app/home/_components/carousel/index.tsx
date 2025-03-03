@@ -11,23 +11,28 @@ import 'swiper/scss';
 import 'swiper/scss/a11y';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
+
+import './carousel.css';
 import WhiteFishLogo from '../../../_components/white-fish-logo';
 
 const slides = [
     {
         id: 1,
-        image: "/assets/testeBackground-tacos.jpg",
-        title: "one bite and you're hooked!"
+        background: "/assets/holeMole-texture.svg",
+        title: "one bite and you're hooked!",
+        image: "/assets/soft-tacos-hero-top.png"
     },
     {
         id: 2,
-        image: "/assets/testeBacground-tacos-2.jpg",
-        title: "A whole lot of flavor!"
+        background: "/assets/holeMole-texture.svg",
+        title: "A whole lot of flavor!",
+        image: "/assets/burrito.png"
     },
     {
         id: 3,
-        image: "/assets/testeBacground-tacos-3.jpg",
-        title: "Fresh, zesty, and made to savor!"
+        background: "/assets/holeMole-texture.svg",
+        title: "Fresh, zesty, and made to savor!",
+        image: "/assets/holeMole-cevitch.png"
     },
 ]
 
@@ -60,12 +65,15 @@ export default function Carousel() {
                     <SwiperSlide key={slide.id}>
                         <div
                             className={Styles.carouselImage}
-                            style={{ backgroundImage: `url(${slide.image})` }}
+                            style={{ backgroundImage: `url(${slide.background})` }}
                         >
                             <div className={Styles.carouselContentCenter}>
                                 <div className={Styles.carouselTitleContainer}>
                                     <h1 className={Styles.carouselTitle}>{slide.title}</h1>
                                     <Button><WhiteFishLogo /> Order Online Now</Button>
+                                </div>
+                                <div className={Styles.carouselImageContainer}>
+                                    <img src={slide.image} alt={slide.title} />
                                 </div>
                             </div>
                         </div>
