@@ -6,6 +6,7 @@ import Hero from './home/_components/heroTop';
 import Catering from './home/_components/sectionCatering';
 import Styles from './Page.module.scss'
 import SkipLine from './home/_components/skipLine';
+import Slide from './home/_components/slide';
 
 
 export default function Page() {
@@ -16,6 +17,7 @@ export default function Page() {
             <Catering />
             <SkipLine />
             <Cta />
+            {/* <Slide /> */}
         </main>
     );
   }

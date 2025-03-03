@@ -1,0 +1,37 @@
+@import "../../../styles/variables";
+@import "../../../styles/breakpoints";
+
+.slide {
+    width: 100%;
+    box-shadow: 0px 2px 51px 10px rgba(0, 0, 0, 0.34);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+    margin: 0 auto;
+    column-gap: 32px;
+
+    &__content {
+        width: 50%;
+        padding: 8em 0 0 4em;
+
+        &__title {
+            font-size: 96px;
+            color: $brand-purple;
+            text-transform: uppercase;
+            line-height: 80px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 28px;
+            color: $text-body;
+        }
+    }
+}
+
+.slideImage {
+    width: 50%;
+}

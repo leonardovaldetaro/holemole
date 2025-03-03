@@ -5,7 +5,7 @@
     background-color: $brand-orange;
     border: none;
     border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0,0,0,.9);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .9);
     color: $text-white;
     cursor: pointer;
     display: flex;
@@ -15,8 +15,13 @@
     padding: 16px 32px;
     margin-top: 1em;
     text-transform: uppercase;
+
+    @media (max-width: $desktop_sm) {
+        font-size: 20px;
+    }
+
     &:hover {
         background-color: $button-hover;
-        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     }
 }

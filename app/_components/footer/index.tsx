@@ -23,7 +23,10 @@ export default function Footer() {
         to: '/menu'
     }, {
         label: 'Locations',
-        to: '/Locations'
+        to: '/locations'
+    }, {
+        label: 'Employment',
+        to: '/employment'
     }]
 
     return (

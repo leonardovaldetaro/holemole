@@ -30,7 +30,7 @@ export default function SkipLine() {
                     <p className={nunito.className}>Select your favorite dishes from our menu.</p>
                 </div>
                 <div className={Styles.skipLine__container__cardArrow}>
-                    <div className={Styles.icon}><Arrow /></div>
+                    <div className={Styles.arrow}><Arrow /></div>
                 </div>
 
                 <div className={Styles.skipLine__container__card}>
@@ -50,7 +50,7 @@ export default function SkipLine() {
                     <p className={nunito.className}>Grab your fresh meal at the counter.</p>
                 </div>
                 <div className={Styles.skipLine__container__cardArrow}>
-                    <div className={Styles.icon}><Arrow /></div>
+                    <div className={Styles.arrow}><Arrow /></div>
                 </div>
 
                 <div className={Styles.skipLine__container__card}>

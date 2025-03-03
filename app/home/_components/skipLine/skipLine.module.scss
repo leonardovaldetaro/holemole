@@ -14,7 +14,7 @@
     padding: 4em 0;
 
     @media (max-width: $desktop_sm) {
-        height: 100vh;
+        height: auto;
     }
 
     &__texts {
@@ -23,12 +23,21 @@
         flex-direction: column;
         align-items: center;
 
+        @media (max-width: $desktop_sm) {
+            padding: 0 1em;
+        }
+
         &__title {
             color: $text-white;
             font-size: 64px;
             line-height: 50px;
             margin-bottom: 24px;
             text-align: center;
+
+            @media (max-width: $desktop_sm) {
+                font-size: 55px;
+                line-height: 44px;
+            }
         }
 
         p {
@@ -51,7 +60,8 @@
         @media (max-width: $desktop_sm) {
             padding: 4em 1em;
             row-gap: 2em;
-            column-gap: 24px;
+            column-gap: 8px;
+            justify-content: space-between;
         }
 
         &__card {
@@ -61,7 +71,7 @@
             align-items: center;
 
             @media (max-width: $desktop_sm) {
-                width: 38%;
+                width: 35%;
             }
 
             &__title {
@@ -96,6 +106,10 @@
 
 .icon {
     width: 100px;
+}
+
+.arrow {
+    width: 120%;
 }
 
 .iconDinamic {

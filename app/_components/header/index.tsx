@@ -32,6 +32,9 @@ export default function Header() {
     }, {
         label: 'Locations',
         to: '/Locations'
+    }, {
+        label: 'Employment',
+        to: '/employment'
     }]
 
     const [isActive, setActive] = useState(false);

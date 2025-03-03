@@ -6,6 +6,10 @@
   max-height: 800px;
   width: 100%;
   z-index: 1;
+
+  @media (max-width: $desktop_sm) {
+    height: 100vh;
+  }
 }
 
 .carouselImage {
@@ -41,7 +45,7 @@
 
   @media (max-width: $desktop_sm) {
     width: 100%;
-    padding: 9em 1em 1em;
+    padding: 6em 1em 1em;
   }
 }
 
