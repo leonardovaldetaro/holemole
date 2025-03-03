@@ -6,7 +6,7 @@
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
     position: relative;
-    bottom: 48px;
+    bottom: 10px;
 }
 .swiper-pagination-bullet {
     background-color: #4CDBFF;
