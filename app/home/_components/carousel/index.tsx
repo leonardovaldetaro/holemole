@@ -26,7 +26,7 @@ const slides = [
         id: 2,
         background: "/assets/holeMole-texture.svg",
         title: "A whole lot of flavor!",
-        image: "/assets/burrito.png"
+        image: "/assets/holeMole-burrito.png"
     },
     {
         id: 3,
