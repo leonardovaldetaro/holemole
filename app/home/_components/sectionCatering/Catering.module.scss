@@ -37,6 +37,7 @@
             @media (max-width: $desktop_sm) {
                 display: block;
                 font-size: 76px;
+                text-align: center;
             }
         }
     }
@@ -70,6 +71,7 @@
 
             @media (max-width: $desktop_sm) {
                 display: none;
+                text-align: center;
             }
         }
 
@@ -78,6 +80,10 @@
             color: $brand-purple;
             text-transform: uppercase;
             line-height: 45px;
+
+            @media (max-width: $desktop_sm) {
+                text-align: center;
+            }
         }
 
         p {
@@ -88,6 +94,7 @@
             margin: 1em 0 2em;
             @media (max-width: $desktop_sm) {
                 margin: 1em 0 0;
+                text-align: center;
             }
         }
     }

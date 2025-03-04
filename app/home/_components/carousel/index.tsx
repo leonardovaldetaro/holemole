@@ -37,26 +37,12 @@ const slides = [
 ]
 
 export default function Carousel() {
-    const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize(); // Verifica o tamanho ao montar o componente
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
     return (
         <section className={Styles.carouselMain}>
             <Swiper
                 modules={[Navigation, Pagination, A11y]}
-                navigation={!isMobile ? true : false}
+                navigation
                 pagination={{ clickable: true }}
                 loop
                 className={Styles.swiper}

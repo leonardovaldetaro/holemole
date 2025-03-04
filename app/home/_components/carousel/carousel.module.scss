@@ -23,7 +23,8 @@
 
   @media (max-width: $desktop_sm) {
     align-items: start;
-    background-position: 49% center;
+    background-position: 50% center;
+    background-size: 705%;
   }
 }
 
@@ -45,7 +46,10 @@
 
   @media (max-width: $desktop_sm) {
     width: 100%;
-    padding: 7em 1em 1em;
+    padding: 4em 1em 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -70,9 +74,10 @@
   text-shadow: 0px 5px 10px rgba(0, 0, 0, .7);
   font-size: 6em;
   text-transform: uppercase;
+  text-align: center;
 
   @media (max-width: $desktop_sm) {
     font-size: 3em;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
   }
 }
