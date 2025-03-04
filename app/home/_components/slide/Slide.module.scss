@@ -50,7 +50,31 @@
 
 .slideImage {
     width: 50%;
+    height: 400px;
+
     @media (max-width: $desktop_sm) {
         width: 100%;
+        height: 310px;
     }
+}
+
+.slideImage__01 {
+    background-image: url("/assets/taco-tuesday.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slideImage__02 {
+    background-image: url("/assets/happyHour.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slideImage__03 {
+    background-image: url("/assets/sunday-funday.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
