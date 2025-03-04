@@ -1,12 +1,12 @@
 @media (max-width: 1152px) {
     .swiper {
-        height: 100vh;
+        height: auto;
     }
   }
 
 .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-    position: relative;
-    bottom: 10px;
+    position: absolute;
+    bottom: 0px;
 }
 .swiper-pagination-bullet {
     background-color: #4CDBFF;

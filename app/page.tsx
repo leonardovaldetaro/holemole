@@ -17,7 +17,7 @@ export default function Page() {
             <Catering />
             <SkipLine />
             <Cta />
-            {/* <Slide /> */}
+            <Slide />
         </main>
     );
   }

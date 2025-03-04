@@ -95,9 +95,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 100px;
 
             @media (max-width: $desktop_sm) {
-                width: 11.285%;
+                width: 18.285%;
             }
 
         }

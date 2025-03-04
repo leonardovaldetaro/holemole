@@ -13,6 +13,8 @@
         display: flex;
         flex-direction: row;
         column-gap: 3em;
+        align-items: center;
+        margin: 0 auto;
 
         @media (max-width: $desktop_sm) {
             flex-direction: column;
