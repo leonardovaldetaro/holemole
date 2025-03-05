@@ -32,14 +32,16 @@ export default function Carousel() {
                     <SwiperSlide key={slide.id}>
                         <div
                             className={Styles.carouselImage}
-                            style={{ backgroundImage: `url(${slide.background})` }}
                         >
                             <div className={Styles.carouselContentCenter}>
                                 <div className={Styles.carouselTitleContainer}>
                                     <h1 className={Styles.carouselTitle}>{slide.title}</h1>
+                                    <div className={Styles.imagem__container__mobile}>
+                                        <img src={slide.image} alt={`Image of ${slide.title}`} />
+                                    </div>
                                     <Button><WhiteFishLogo /> Order Online Now</Button>
                                 </div>
-                                <div className={Styles.carouselImageContainer}>
+                                <div className={Styles.imagem__container}>
                                     <img src={slide.image} alt={`Image of ${slide.title}`} />
                                 </div>
                             </div>
