@@ -2,7 +2,7 @@
 
 import Styles from './carousel.module.scss';
 import Button from '../../../_components/button/button';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 //import swiper modules and styles
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,29 +14,10 @@ import 'swiper/scss/pagination';
 
 import './carousel.css';
 import WhiteFishLogo from '../../../_components/white-fish-logo';
-
-const slides = [
-    {
-        id: 1,
-        background: "/assets/holeMole-texture.svg",
-        title: "one bite and you're hooked!",
-        image: "/assets/soft-tacos-hero-top.png"
-    },
-    {
-        id: 2,
-        background: "/assets/holeMole-texture.svg",
-        title: "A whole lot of flavor!",
-        image: "/assets/holeMole-burrito.png"
-    },
-    {
-        id: 3,
-        background: "/assets/holeMole-texture.svg",
-        title: "Fresh, zesty, and made to savor!",
-        image: "/assets/holeMole-cevitch.png"
-    },
-]
+import { slidesData } from './slidesData';
 
 export default function Carousel() {
+    const slides = useMemo(() => slidesData, []);
 
     return (
         <section className={Styles.carouselMain}>
@@ -59,7 +40,7 @@ export default function Carousel() {
                                     <Button><WhiteFishLogo /> Order Online Now</Button>
                                 </div>
                                 <div className={Styles.carouselImageContainer}>
-                                    <img src={slide.image} alt={slide.title} />
+                                    <img src={slide.image} alt={`Image of ${slide.title}`} />
                                 </div>
                             </div>
                         </div>

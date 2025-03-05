@@ -7,6 +7,7 @@ import Catering from './home/_components/sectionCatering';
 import Styles from './Page.module.scss'
 import SkipLine from './home/_components/skipLine';
 import Slide from './home/_components/slide';
+import ScrollToTopButton from './_components/ScrollToTopButton';
 
 
 export default function Page() {
@@ -18,6 +19,7 @@ export default function Page() {
             <SkipLine />
             <Cta />
             <Slide />
+            <ScrollToTopButton />
         </main>
     );
   }
